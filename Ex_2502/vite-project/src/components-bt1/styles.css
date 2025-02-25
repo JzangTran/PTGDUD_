@@ -1,0 +1,146 @@
+/* App.css */
+
+/* Thêm kiểu cho phần container chính */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Phần input và nút Add Todo */
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style cho các phần radio button */
+  label {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  span {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #ff6347;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Đánh dấu công việc đã hoàn thành */
+  li span[style="text-decoration: line-through;"] {
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  /* ToDoCard.css */
+
+/* Card container */
+.todo-card {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ffa601;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-card:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox */
+.checkbox {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Text of the todo */
+.todo-text {
+  font-size: 16px;
+  color: #333;
+  flex-grow: 1;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #ff6347;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ff4500;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
